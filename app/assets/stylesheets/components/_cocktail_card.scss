@@ -1,0 +1,37 @@
+.cocktail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+
+.cocktail-card {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // font-size: 22px;
+  color: white;
+  font-weight: bolder;
+  // text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.cocktail-image { 
+  border-radius: 5%;
+  height: 150px;
+  width: 100px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+    line-height: 150px;
+    font-weight: bolder;
+  }
+}

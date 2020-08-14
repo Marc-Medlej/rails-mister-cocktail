@@ -1,0 +1,28 @@
+.home-banner {
+    background-image: asset-url('guest-bartending-feat.jpg');
+    background-size: cover;
+    height: 80vh;
+    color: #eee;
+    text-align: center;
+    padding-top: 40vh;
+    
+    h1 {
+        font-size: 48px;
+    }
+}
+
+.new-banner {
+    background-image: asset-url('create-new.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #eee;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40vh;
+    display: flex;
+    
+    h1 {
+        font-size: 48px;
+    }
+}

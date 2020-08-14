@@ -1,9 +1,19 @@
-<h1>Cocktails</h1>
-<ul>
-    <% @cocktails.each do |cocktail| %>
-        <li><%=cocktail.name%>  <%= link_to "See details", cocktail_path(cocktail), class: "btn btn-primary"%></li>
-        <br>   
-    <% end %>
-</ul>
+<div class="home-banner">
+    <h1>Cocktails from the DJ</h1>
+    <%= link_to "Create new cocktail", new_cocktail_path, class: "btn btn-secondary"%>
+    <br>
+    <p>~~~~see below~~~</p>
+</div>
 
-<%= link_to "Create new cocktail", new_cocktail_path, class: "btn btn-secondary"%>
+<div class="cocktails-container">
+  <div class="row justify-content-center">
+    <% @cocktails.each do |cocktail| %>
+        <div class="col-4 cocktail-card">
+          <div class="cocktail-image" style="background-image: url('<%= cl_image_path cocktail.photo.key, height: 150, width: 100, crop: :scale %>');"> 
+            <a><%= link_to cocktail.name, cocktail_path(cocktail)%></a>
+          </div>
+        </div>   
+    <% end %>
+  </div>
+</div>
+
